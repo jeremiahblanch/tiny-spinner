@@ -1,17 +1,23 @@
-.spinner {
+:root {
+  --tiny-spinner-size: 2rem;
+  --tiny-spinner-thickness: 0.25rem;
+  --tiny-spinner-color: #000;
+}
+
+.tiny-spinner {
   position: fixed;
-  top: calc(50% - 1rem);
-  left: calc(50% - 1rem);
-  width: 2rem;
-  height: 2rem;
-  border: 0.25rem solid #ffc000;
-  border-bottom: 0.25rem solid rgba(0,0,0,0);
+  top: calc(50% - 0.5 * var(--tiny-spinner-size));
+  left: calc(50% - 0.5 * var(--tiny-spinner-size));
+  width: var(--tiny-spinner-size);
+  height: var(--tiny-spinner-size);
+  border: var(--tiny-spinner-thickness) solid var(--tiny-spinner-color);
+  border-bottom: var(--tiny-spinner-thickness) solid rgba(0,0,0,0);
   border-radius: 50%;
   animation: spin 1s linear infinite;
   z-index: 9999;
 }
 
-.spinner--hidden {
+.tiny-spinner--hidden {
   display: none;
 }
 

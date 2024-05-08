@@ -1,12 +1,13 @@
 :root {
   --tiny-spinner-color: #000;
+  --tiny-spinner-duration: 1s;
   --tiny-spinner-position: fixed;
   --tiny-spinner-size: 2rem;
   --tiny-spinner-thickness: 0.25rem;
 }
 
 .tiny-spinner {
-  animation: spin 1s linear infinite;
+  animation: spin var(--tiny-spinner-duration) linear infinite;
   border: var(--tiny-spinner-thickness) solid var(--tiny-spinner-color);
   border-bottom: var(--tiny-spinner-thickness) solid rgba(0,0,0,0);
   border-radius: 50%;

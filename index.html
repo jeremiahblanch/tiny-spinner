@@ -5,8 +5,24 @@
     <meta name="viewport" content="width=device-width">
     <title>Spinner</title>
     <link rel="stylesheet" href="spinner.css">
+    <style>
+        .variant1 {
+          --tiny-spinner-size: 4rem;
+          --tiny-spinner-thickness: 1rem;
+          --tiny-spinner-color: pink;
+          --tiny-spinner-position: absolute;
+          position: relative;
+          height: 10rem;
+          width: 10rem;
+        }
+    </style>
   </head>
   <body>
-    <div class="spinner"></div>
+    <div class="tiny-spinner"></div>
+
+    <div class="variant1">
+      <div class="tiny-spinner"></div>
+    </div>
+
   </body>
 </html>

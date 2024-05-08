@@ -1,19 +1,20 @@
 :root {
+  --tiny-spinner-color: #000;
+  --tiny-spinner-position: fixed;
   --tiny-spinner-size: 2rem;
   --tiny-spinner-thickness: 0.25rem;
-  --tiny-spinner-color: #000;
 }
 
 .tiny-spinner {
-  position: fixed;
-  top: calc(50% - 0.5 * var(--tiny-spinner-size));
-  left: calc(50% - 0.5 * var(--tiny-spinner-size));
-  width: var(--tiny-spinner-size);
-  height: var(--tiny-spinner-size);
+  animation: spin 1s linear infinite;
   border: var(--tiny-spinner-thickness) solid var(--tiny-spinner-color);
   border-bottom: var(--tiny-spinner-thickness) solid rgba(0,0,0,0);
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  height: var(--tiny-spinner-size);
+  left: calc(50% - 0.5 * var(--tiny-spinner-size));
+  position: var(--tiny-spinner-position);
+  top: calc(50% - 0.5 * var(--tiny-spinner-size));
+  width: var(--tiny-spinner-size);
   z-index: 9999;
 }
 

@@ -10,9 +10,11 @@
   border: var(--tiny-spinner-thickness) solid var(--tiny-spinner-color);
   border-bottom: var(--tiny-spinner-thickness) solid rgba(0,0,0,0);
   border-radius: 50%;
+  box-sizing: border-box;
   height: var(--tiny-spinner-size);
   left: calc(50% - 0.5 * var(--tiny-spinner-size));
   position: var(--tiny-spinner-position);
+  transform-origin: center;
   top: calc(50% - 0.5 * var(--tiny-spinner-size));
   width: var(--tiny-spinner-size);
   z-index: 9999;

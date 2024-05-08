@@ -14,7 +14,7 @@ Use the CSS variables! By default these are the values:
 }
 ```
 
-If you want to override, just use more specific CSS eg with a container, `body` or the spinner itself, eg
+If you want to override the values, just use more specific CSS eg with a container, `body` or the spinner itself, eg
 ```CSS
 .tiny-spinner {
   --tiny-spinner-color: coral;
